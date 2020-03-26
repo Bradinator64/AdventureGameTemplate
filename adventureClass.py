@@ -7,7 +7,8 @@ class AdventureClass: #Prints out text and displays choices
         printedText = self.text + "\n\n" #Assigns the description text to a variable.
         if self.choices != None: #Checks if there have been any choices defined to branch to
             for key in self.choices:
-                printedText += (str(key) + ": " + self.choices[key] + "\n") #Adds all the choices assigned to the story node to the variable.
+                #printedText += (str(key) + ": " + self.choices[key] + "\n") #Adds all the choices assigned to the story node to the variable.
+                printedText += "{key}: {value}\n".format(key=str(key), value=self.choices[key]) #Adds all the choices assigned to the class to printedText.
         print(printedText) #returns the variable.
 
 testPara = AdventureClass("""
