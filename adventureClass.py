@@ -12,7 +12,8 @@ class AdventureClass: #Prints out text and displays choices
 
 testPara = AdventureClass("""
 This is a test case""", {1: "choice 1", 2: "choice 2"})
+testPara2 = AdventureClass("""
+This is also a test case""")
 
 testPara.printAdventure()
-
-    
+testPara2.printAdventure()
