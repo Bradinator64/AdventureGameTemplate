@@ -1,4 +1,4 @@
-class AdventureClass: #Prints out text and displays choices
+class StoryNode: #Prints out text and displays choices
     def __init__(self, text, choices_input=[]):
         self.text = text
         self.choices_input = choices_input
@@ -39,9 +39,9 @@ testInventory.printInventory()
 testInventory.removeItem("torch")
 testInventory.printInventory()
 
-testPara = AdventureClass("""
+testPara = StoryNode("""
 This is a test case""", ["choice 1", "choice 2"])
-testPara2 = AdventureClass("""
+testPara2 = StoryNode("""
 This is also a test case""")
 
 testPara.printAdventure()
